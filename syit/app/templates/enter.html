@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="/static/css/1_1.css" />
+	</head>
+	<body>
+		<div class = sr>
+			<form method = "POST">
+				{% if ent %}
+				<p><input type = "text", size = 40, name = "num", placeholder = {{ number }}></p>
+				{% else %}
+				<p><input type = "text", size = 40, name = "kod", placeholder = "Полученный код"></p>
+				{% endif %}
+				{% if ent %}
+				<p><input type = "submit" name = "start" value = "Come"></p>
+				{% else %}
+				<p><input type = "submit" name = "start" value = "Enter"></p>
+				{% endif %}
+				{% if ko %}
+				<a>Неправильный код, вам выслан новый код</a>
+				{% endif %}
+			</form>
+		</div>
+	</body>
+</html>

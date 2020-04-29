@@ -1,0 +1,15 @@
+div, html, body {
+    position: fixed;
+    float: left;
+}
+
+.sr {
+    margin-left: 40%;
+    padding: 20px;
+}
+
+.pr{
+    margin-left: auto;
+    padding: 20px;
+    font-size: 20;
+}
